@@ -70,9 +70,9 @@ for i, topping in enumerate(toppings):
     var = tk.IntVar()
     topping_vars[topping] = var
     tk.Checkbutton(topping_frame, text=topping, variable=var, 
-                  font=('Arial', 11), bg='#fffacd', fg='#8b0000', selectcolor='#ffe4e1').pack(anchor='w')
+                  font=('Arial', 11), bg='#fffacd', fg="#5e0000", selectcolor='#ffe4e1').pack(anchor='w')
 
-tk.Label(window, text="Your Scoop Stack:", font=('Arial', 12), bg='#ffebcd', fg='#8b0000').grid(row=3, column=0, sticky='e')
+tk.Label(window, text="Your Scoop Stack:", font=('Arial', 12), bg='#ffebcd', fg="#5f0000").grid(row=3, column=0, sticky='e')
 entry_scoops = tk.Entry(window, font=('Arial', 12), bg='white', fg='black')
 entry_scoops.grid(row=3, column=1, sticky='w')
 entry_scoops.insert(0, "1")
@@ -95,5 +95,6 @@ label_result.pack()
 
 tk.Label(window, text="How to play: Scoop your flavors, stack your toppings, roll for a sweet surprise!", 
          font=('Arial', 10), bg='#ffe4b5', fg='#8b0000').grid(row=6, column=0, columnspan=2)
+
 
 window.mainloop()
